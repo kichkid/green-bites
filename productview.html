@@ -156,6 +156,56 @@
   </div>
 </div>
 
+
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Logo & About -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <img src="images/Untitled-1-01 (1).png" alt="Green-Bite Logo" style="height: 70px;" class="mb-3">
+          <p>Green-Bite delivers healthy, delicious snacks for all ages. We blend fruits, nuts, and wholesome ingredients to create snacks that fuel your day.</p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          <h5 class="fw-bold">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+            <li><a href="productview.html" class="text-light text-decoration-none">Order Products</a></li>
+            <li><a href="checkout.html" class="text-light text-decoration-none">Check-out</a></li>
+            <li><a href="#" class="text-light text-decoration-none">Contact Us</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact & Social -->
+        <div class="col-lg-4 col-md-12 mb-4">
+          <h5 class="fw-bold">Contact Us</h5>
+          <p>Email: <a href="mailto:support@greenbite.com" class="text-light text-decoration-none">support@greenbite.com</a></p>
+          <p>Phone: +234 800 123 4567</p>
+          <p>Address: 123 Snack Street, Asaba, Nigeria</p>
+          <div class="mt-2">
+            <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-light">
+      <div class="text-center small">
+        &copy; <span id="year"></span> Green-Bite. All rights reserved.
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Bootstrap Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  
+  <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  
+
 <script>
     document.getElementById("orderForm").addEventListener("submit", function(e) {
       e.preventDefault(); // stop normal form submission
