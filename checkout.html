@@ -152,7 +152,7 @@
           <strong id="cart-total">$0.00</strong>
         </div>
         <hr>
-        <button class="btn btn-success w-100">Proceed to Checkout</button>
+        <button class="btn btn-success w-100" id="checkout-btn">Proceed to Checkout</button>
       </div>
     </div>
 
@@ -200,6 +200,20 @@
 
     cartTotal.textContent = `$${total.toFixed(2)}`;
   }
+
+
+
+  document.getElementById("checkout-btn").addEventListener("click", function() {
+  // Show success alert
+  alert("✅ Successfully Checked Out!");
+
+  // Reset cart items
+  const cartItems = document.getElementById("cart-items");
+  cartItems.innerHTML = '<li class="list-group-item text-muted">No items in cart</li>';
+
+  // Reset total
+  document.getElementById("cart-total").textContent = "$0.00";
+});
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
